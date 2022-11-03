@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1252,1918</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>987.333333333333,2054.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ACMESystem1_Login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -48,7 +48,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -77,26 +77,28 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Login to ACME System 1 using the URL and Username/Password input arguments. An exception is thrown if the credentials are not correct.&#xA;&#xA;Preconditions: None&#xA;Post action: ACME System 1 on the Dashboard page opened in Internet Explorer." DisplayName="ACMESystem1_Login" sap:VirtualizedContainerService.HintSize="789,1813" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Login to ACME System 1 using the URL and Username/Password input arguments. An exception is thrown if the credentials are not correct.&#xA;&#xA;Preconditions: None&#xA;Post action: ACME System 1 on the Dashboard page opened in Internet Explorer." DisplayName="ACMESystem1_Login" sap:VirtualizedContainerService.HintSize="790,1990" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="747,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting ACMESystem1_Login&quot;]" />
-    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="747,1518" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="748,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting ACMESystem1_Login&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="748,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Adding a log message&quot;]" />
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="748,1550" sap2010:WorkflowViewState.IdRef="RetryScope_1">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="705,1344" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="706,1372.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser - ACME System 1" sap:VirtualizedContainerService.HintSize="663,533" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_URL]">
+            <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser - ACME System 1" sap:VirtualizedContainerService.HintSize="664,534.666666666667" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_URL]">
               <ui:OpenBrowser.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -158,7 +160,7 @@
                 </ActivityAction>
               </ui:OpenBrowser.Body>
             </ui:OpenBrowser>
-            <Sequence sap2010:Annotation.AnnotationText="Verify that the Login was succesful by looking an element up that exists only on the Dashboard page, the page where we are redirected to after logging in." DisplayName="Check Login Result" sap:VirtualizedContainerService.HintSize="663,679" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence sap2010:Annotation.AnnotationText="Verify that the Login was succesful by looking an element up that exists only on the Dashboard page, the page where we are redirected to after logging in." DisplayName="Check Login Result" sap:VirtualizedContainerService.HintSize="664,706" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="DashboardFound" />
               </Sequence.Variables>
@@ -168,7 +170,7 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:UiElementExists DisplayName="Element Exists Dashboard Title" Exists="[DashboardFound]" sap:VirtualizedContainerService.HintSize="621,68" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists DisplayName="Element Exists Dashboard Title" Exists="[DashboardFound]" sap:VirtualizedContainerService.HintSize="622,68" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                 <ui:UiElementExists.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5a604d34-8551-4827-9631-532245dccb87" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;&lt;webctrl isleaf='1' tag='H1' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -180,25 +182,25 @@
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If Condition="[DashboardFound]" sap:VirtualizedContainerService.HintSize="621,437" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[DashboardFound]" sap:VirtualizedContainerService.HintSize="622,460.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login to ACME System 1 is succesful.&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login to ACME System 1 is succesful.&quot;]" />
                 </If.Then>
                 <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="242,290" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence sap:VirtualizedContainerService.HintSize="242,300" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:RequestCredential sap2010:Annotation.AnnotationText="Prompt the user to enter the credential for ACME System 1." DisplayName="Request credential" sap:VirtualizedContainerService.HintSize="200,79" sap2010:WorkflowViewState.IdRef="RequestCredential_1" Message="Please provide the credentials for the ACME website." Password="[in_Password]" Title="ACME Credentials" Username="[in_Username]">
+                    <ui:RequestCredential sap2010:Annotation.AnnotationText="Prompt the user to enter the credential for ACME System 1." DisplayName="Request credential" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="RequestCredential_1" Message="Please provide the credentials for the ACME website." Password="[in_Password]" Title="ACME Credentials" Username="[in_Username]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:RequestCredential>
-                    <Throw sap2010:Annotation.AnnotationText="Throw the exception so that the Retry Scope is executed again." DisplayName="Throw Incorrect Credential" Exception="[New Exception(&quot;Incorrect Credential&quot;)]" sap:VirtualizedContainerService.HintSize="200,79" sap2010:WorkflowViewState.IdRef="Throw_1">
+                    <Throw sap2010:Annotation.AnnotationText="Throw the exception so that the Retry Scope is executed again." DisplayName="Throw Incorrect Credential" Exception="[New Exception(&quot;Incorrect Credential&quot;)]" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Throw_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
